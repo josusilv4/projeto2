@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Jornada do Artefato Perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/biblioteca-sao-paulo.png" alt="Biblioteca antiga em São Paulo">
+            <p>Em uma antiga biblioteca de São Paulo, você encontra um diário enigmático que menciona um artefato lendário escondido em algum lugar do Brasil. Decidido a encontrar esse artefato, você começa sua jornada seguindo as pistas deixadas no diário.</p>
+            <button class="btn-proximo" data-proximo="1">Explorar uma caverna em Minas Gerais</button>
+            <button class="btn-proximo" data-proximo="2">Investigar o Mercado Ver-o-Peso em Belém</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você chega a uma caverna subterrânea em Minas Gerais. Dentro, você encontra inscrições antigas que indicam a próxima pista em Belém.</p>
+            <button class="btn-proximo" data-proximo="3">Viajar para Belém</button>
+            <button class="btn-proximo" data-proximo="4">Explorar mais a caverna</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>No Mercado Ver-o-Peso, você descobre uma pista intrigante escondida em um antigo artefato de madeira. O diário menciona que o artefato leva a uma cidade perdida no Pantanal.</p>
+            <button class="btn-proximo" data-proximo="5">Viajar para o Pantanal</button>
+            <button class="btn-proximo" data-proximo="6">Explorar mais o mercado</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Chegando a Belém, você encontra uma pista crucial em um mercado local que confirma a localização da cidade perdida no Pantanal.</p>
+            <button class="btn-proximo" data-proximo="5">Viajar para o Pantanal</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <p>Explorando mais a caverna, você não encontra novas pistas e decide voltar ao início.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar à biblioteca</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>No Pantanal, você segue as pistas e descobre os vestígios de uma civilização antiga. Finalmente, você encontra o artefato lendário que estava escondido há séculos.</p>
+            <button class="btn-proximo" data-proximo="7">Estudar o artefato</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Explorando mais o mercado, você não encontra novas pistas e decide voltar para Belém.</p>
+            <button class="btn-proximo" data-proximo="3">Viajar para Belém</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <img src="img/artefato-pantanal.png" alt="Artefato lendário encontrado no Pantanal">
+            <p>Com o artefato encontrado, você decide estudá-lo e preservar seu legado, desvendando segredos antigos e contribuindo para a história.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
